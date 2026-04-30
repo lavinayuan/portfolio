@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<title>Jurassic World</title>
+
+
+<style>	
+		.jurassicworld { position: relative; display:block; overflow: hidden; line-height: 0; }
+		.tRex { position:absolute; width:40%; top:-10%; left:2%; animation-name: trex; animation-duration: 6s; animation-fill-mode:forwards; }
+		.blue { position:absolute; width:40%; top:-8%; right:-2%; animation-name: drive; animation-duration: 6s; animation-fill-mode:forwards; }
+		.jurassicLogo { position:absolute; width:35%; top:10%; left: 50%; transform: translate(-50%); animation-name: jurassicLogoZoom; animation-duration: 2s; }
+		
+		.jurassicLogo-m { position:absolute; width:60%; left: 55%; top:55%; transform: translate(-60%,-55%); animation-name: jurassicLogoMZoom; animation-duration: 3.5s; }
+		
+		@keyframes trex {
+			from { transform:scale(0.96) translateX(0)}
+			to { transform:scale(1) translateX(-3%)}
+		}
+		
+		@keyframes drive {
+			from { transform:scale(0.96) translateX(0) }
+			to { transform:scale(1) translateX(3%) }
+		}
+		
+		@keyframes jurassicLogoZoom {
+			0% { width:32%; opacity: 0.8; }
+			100% { opacity:1; }
+		}
+		@keyframes jurassicLogoMZoom {
+			0% { width:40%; opacity: 0.8; }
+			100% { opacity:1; }
+		}
+				
+		.jurassicworld-m { display:none; }
+
+		@media screen and (max-width:600px) {
+			.jurassicworld { display:none!important; }
+			.jurassicworld-m { position: relative; display:block!important; line-height:0; }
+						
+		}
+		
+	</style>
+	
+	
+</head>
+
+<body>	
+	
+
+	<div class="jurassicworld">
+		<img src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/jurassicworld-d-into-the-wild-BKGD-2.jpg" style="width:100%">
+		<img class="tRex" src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/-dinoTRex.png">
+		<img class="blue" src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/-dinoBlue.png">
+		
+		<img class="jurassicLogo" src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/-jurassicLogo.png">
+	</div>
+	<div class="jurassicworld-m">
+		<img width="100%" src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/jurassicworld-m-into-the wild-v3.png">
+		<img class="jurassicLogo-m" src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BDFX_STG/on/demandware.static/-/Library-Sites-toys-global/default/dwedfbe4d7/images/pages/brand-pages/-jurassicLogo.png">
+	</div>
+
+	
+</body>
+</html>	
+	
