@@ -54,6 +54,16 @@ a { text-decoration:none; color:#666; font-size:16px; word-break: break-all; wor
 
 .sample-4-col > div { width: calc(92%/4); }	
 
+.sample-3-col {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top:24px;
+	margin-bottom:60px;
+	}	
+
+.sample-3-col > div { width: calc(96%/3); }		
+
 .sample-2-col {
 	display: flex;
 	flex-wrap: wrap;
@@ -64,7 +74,7 @@ a { text-decoration:none; color:#666; font-size:16px; word-break: break-all; wor
 	}	
 
 .sample-2-col > div { width: calc(98%/2); margin-bottom:30px; }	
-
+.sample-2-col > div img { width: 90%; }
 
 .email-sample {
 	display: flex;
@@ -94,6 +104,7 @@ a { text-decoration:none; color:#666; font-size:16px; word-break: break-all; wor
 	
 	.email-sample > div { width: calc(78%/3); margin:0 10px; margin-bottom:12px; }
 	.sample-4-col > div { width: calc(88%/4); margin-bottom:6px; }
+	.sample-3-col { padding: 0 18px; margin-bottom: 42px; }
 	.sample-2-col > div { width: calc(90%/2); margin-bottom:24px; }
 	
 	.animate { width: 21%;  margin:2px 6px; margin-bottom: 22px; }
@@ -122,6 +133,8 @@ a { text-decoration:none; color:#666; font-size:16px; word-break: break-all; wor
 	
 	.sample-4-col { margin-top:20px; margin-bottom:42px; }
 	.sample-4-col > div { width: calc(90%/2); }
+	.sample-3-col { margin-bottom: 36px; }
+	.sample-3-col > div { width: 90%; }
 	.sample-2-col { margin-top:0px; margin-top:30px; margin-bottom:40px; }
 	.sample-2-col > div { width: 95%; margin-bottom:8px; }
 	
@@ -141,6 +154,13 @@ a { text-decoration:none; color:#666; font-size:16px; word-break: break-all; wor
 	<div class="title">~ Portfolio ~</div>
 		<div class="subtitle" id="webdesign">Website projects include (but not limited to):</div>
 	
+	<p class="portfolio">Responsive websites:</p>
+		<div class="sample-3-col">
+			<div><a href="https://lavinayuan.github.io/fancychineseclinic/index.html" target="_blank"><img src="images/fancychineseclinicscreen.webp"></a></div>
+			<div><a href="https://lavinayuan.github.io/craigcyr/" target="_blank"><img src="images/craigcyrscreen.webp"></a></div>
+			<div><a href="https://lavinayuan.github.io/ronalddong/index.html" target="_blank"><img src="images/ronalddongscreen.webp"></a></div>
+		</div>
+
 	<p class="portfolio">Landing pages (responsive):</p>
 
 		<div class="sample-2-col" style="margin-bottom:24px;">
